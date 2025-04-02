@@ -1,5 +1,8 @@
-import { AllTransactionsResponse, RollupResponse, TransactionResponse } from "@/types";
-
+import {
+  AllTransactionsResponse,
+  RollupResponse,
+  TransactionResponse,
+} from "@/types";
 
 export function formatTimestamp(timestamp: number): string {
   const date = new Date(timestamp * 1000);
@@ -22,9 +25,7 @@ export function formatDuration(ms: number): string {
   return `${minutes}m ${seconds}s`;
 }
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api";
-
+const API_BASE_URL = "https://espresso.techave.my.id/api";
 
 export async function fetchTransaction(
   txHash: string
