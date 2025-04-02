@@ -17,6 +17,7 @@ import {
   optimism,
   arbitrum,
   base,
+  arbitrumSepolia,
 } from 'wagmi/chains';
 import {
   QueryClientProvider,
@@ -58,6 +59,7 @@ const config = getDefaultConfig({
   chains: [
     espressoRollup1,
     espressoRollup2,
+    arbitrumSepolia
   ],
   ssr: true,
 });

@@ -17,6 +17,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex space-x-4">
                     <Link href="/" className="hover:text-[#FFF8E1]">Search</Link>
+                    <Link href="/bridge" className="hover:text-[#FFF8E1]">Bridge</Link>
                     <Link href="/transactions" className="hover:text-[#FFF8E1]">Transactions</Link>
                     <Link href="/leaderboard" className="hover:text-[#FFF8E1]">Leaderboard</Link>
                     <Link href="/metrics" className="hover:text-[#FFF8E1]">Metrics</Link>
